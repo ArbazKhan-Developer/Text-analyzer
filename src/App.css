@@ -6,6 +6,13 @@
   height: 40vmin;
   pointer-events: none;
 }
+.myname {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.1rem;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -13,21 +20,38 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.background {
+  background-color: rgb(232, 225, 237);
 }
 
-.App-link {
-  color: #61dafb;
+.txt {
+  color: rgb(39, 8, 8);
+  font-size: 2rem;
+  margin: auto;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.cont {
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.para {
+  border: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: cadetblue;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 3rem;
+}
+.paratext {
+ margin-left: .8rem;
+ margin-top: 9px;
+ color: rgb(240, 8, 8);
+}
+.container h6 {
+  font-family: 'Times New Roman', Times, serif;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +59,10 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.intro {
+  color: red;
+  font-size: 2rem;
+  font-family: 'Courier New', Courier, monospace;
 }
