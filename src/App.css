@@ -6,6 +6,9 @@
   height: 40vmin;
   pointer-events: none;
 }
+.accordion {
+  margin-top: 3rem;
+}
 .myname {
   display: flex;
   justify-content: center;
@@ -28,6 +31,10 @@
   color: rgb(39, 8, 8);
   font-size: 2rem;
   margin: auto;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.linktxt {
+  text-decoration: none;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 

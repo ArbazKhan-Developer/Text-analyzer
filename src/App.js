@@ -3,25 +3,40 @@ import { useState } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar.js";
 import Formtext from './components/Formtext'
-import Footer from './components/Footer'
+import Faq from './components/Faq'
+// import Preview from "./components/Preview";
+
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";
 
 function App() {
   const [mode, setMode] = useState('light')
-  const toggleMode = ()=>{
+  const toggleMode = () => {
     console.log('inside togglemode');
-    if(mode ==="light"){
+    if (mode === "light") {
       setMode("dark")
       document.body.style.backgroundColor = "#000d1a"
-    }else{
+    } else {
       setMode('light')
       document.body.style.backgroundColor = "white"
     }
   }
   return (
     <>
-      <Navbar toggleMode={toggleMode} mode ={mode}/>
-      <Formtext mode ={mode}/>
-      {/* <Footer/> */}
+      
+      {/* <Formtext mode ={mode}/> */}
+      {/* <Faq /> */}
+      <Router>
+      <Navbar toggleMode={toggleMode} mode={mode} />
+        <Routes>
+          <Route exact path="/" element={<Formtext mode ={mode}/>} />
+          <Route exact path="/faq" element={<Faq mode ={mode}/>} />
+          
+        </Routes>
+      </Router>
     </>
   );
 }
